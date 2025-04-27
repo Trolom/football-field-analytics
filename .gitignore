@@ -1,0 +1,20 @@
+# Common for ML
+*.pt
+*.pth
+*.mp4
+*.avi
+*.csv
+*.zip
+*.h5
+*.npy
+*.npz
+*.log
+*.pkl
+
+# Skip whole folders
+runs/
+data/
+datasets/
+checkpoints/
+venv/
+training/
