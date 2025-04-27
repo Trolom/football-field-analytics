@@ -15,12 +15,12 @@ Annotation & VisualizationDraws ellipses and labels for tracked objects, triangl
 ## Installation
 
 1. Create and activate a virtual environment:
-
+```
 python3 -m venv venv
 source venv/bin/activate
-
+```
 2. Install dependencies:
-
+```
 pip install -r requirements.txt
-
+```
 Will be completed in the following weeks!!
