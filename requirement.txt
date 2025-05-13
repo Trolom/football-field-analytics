@@ -1,0 +1,10 @@
+ultralytics
+supervision
+numpy
+opencv-python
+torch
+torchvision
+scikit-learn
+timm
+inference[transformers,sam,clip,gaze,grounding-dino]
+pandas
