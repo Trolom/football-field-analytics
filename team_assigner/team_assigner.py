@@ -1,10 +1,10 @@
-import cv2
 import numpy as np
 from sklearn.cluster import KMeans
 import pickle
 import os
 from .team import TeamClassifier
 from collections import deque, Counter
+from utils import get_center_of_bbox, measure_distance
 
 
 class TeamAssigner:
@@ -42,7 +42,7 @@ class TeamAssigner:
                 pickle.dump((fitting_crops, all_crops, player_info), f)
 
         return fitting_crops, all_crops, player_info
-
+    
 
     def assign_teams(self, tracks, video_frames, read_from_stub=False, stub_path=None):
         # 1. Collect crops
@@ -115,6 +115,3 @@ class TeamAssigner:
                 ginfo['team_color'] = team_colors[team_id]
 
         
-
-    
-    

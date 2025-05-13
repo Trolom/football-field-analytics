@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 from typing import List, Tuple
 
-
+# Taken from a git repository
 @dataclass
 class SoccerPitchConfiguration:
     width: int = 7000  # [cm]

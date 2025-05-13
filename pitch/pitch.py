@@ -6,7 +6,7 @@ import numpy as np
 
 from .football import SoccerPitchConfiguration
 
-
+# Taken from a git repository
 def draw_pitch(
     config: SoccerPitchConfiguration,
     background_color: sv.Color = sv.Color(34, 139, 34),

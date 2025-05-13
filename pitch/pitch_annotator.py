@@ -73,9 +73,6 @@ class PitchAnnotator:
 
         return canvas
 
-            
-
-
 
     def annotate_tactical_board(
             self,
@@ -128,10 +125,8 @@ class PitchAnnotator:
             radius=10,
             pitch=board
         )
-
-        # --- Players (use each track's team_color) ---
-        # We need to draw by color, so group by unique colors
-        # collect transformed points in parallel with colors
+        
+        # --- Players (team colors) ---
         player_colors = [info['team_color'] for info in player_dict.values()]
         # Unique colors preserving order
         seen = {}
