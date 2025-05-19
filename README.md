@@ -51,3 +51,11 @@ Delete stub files from the stubs folder, these were used during development to s
 
 You are encouraged to use videos from this Kaggle dataset for better compatibility with the pipeline:
 [⚽ DFL Bundesliga - 30s Clips Dataset](https://www.kaggle.com/datasets/saberghaderi/-dfl-bundesliga-460-mp4-videos-in-30sec-csv)
+
+6. Environment Setup
+
+Create a `.env` file in the project root and add your Roboflow API key for the pitch keypoint detection model:
+
+```
+ROBOFLOW_API_KEY=your_api_key_here
+```
