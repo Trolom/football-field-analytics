@@ -2,7 +2,6 @@
 *.pt
 *.pth
 *.mp4
-*.avi
 *.csv
 *.zip
 *.h5
