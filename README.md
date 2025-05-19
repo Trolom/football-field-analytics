@@ -23,4 +23,31 @@ source venv/bin/activate
 ```
 pip install -r requirements.txt
 ```
-Will be completed in the following weeks!!
+
+3. Download the player detection model
+
+After installing the requirements, download the pretrained player detection model from Google Drive:
+[player_detection.pt Download Link](https://drive.google.com/file/d/1zxooXx3Re91XmcZG8jX2Lj1h7Mkua077/view?usp=sharing)
+
+Then create a folder named models in the project root and place best.pt inside:
+
+```
+mkdir models
+mv /path/to/downloaded/player_detection.pt models/
+```
+
+4. Model training & preprocessing notebooks
+
+The notebook used to train the player detection model is located in the development_and_analysis folder.
+It was trained on Kaggle using their available GPUs.
+
+Another notebook in the same folder is used for extracting player crops to assist in team assignment using appearance-based features.
+Goalkeepers, however, are assigned using spatial centroids instead of visual features.
+
+5. Using your own video
+If you want to try the system on a different video:
+
+Delete stub files from the stubs folder, these were used during development to speed up processing in notebook cells.
+
+You are encouraged to use videos from this Kaggle dataset for better compatibility with the pipeline:
+[⚽ DFL Bundesliga - 30s Clips Dataset](https://www.kaggle.com/datasets/saberghaderi/-dfl-bundesliga-460-mp4-videos-in-30sec-csv)

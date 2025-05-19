@@ -8,3 +8,4 @@ scikit-learn
 timm
 inference[transformers,sam,clip,gaze,grounding-dino]
 pandas
+ipython
